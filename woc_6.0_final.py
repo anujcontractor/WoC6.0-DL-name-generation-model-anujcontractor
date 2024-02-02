@@ -32,7 +32,7 @@ model.add(Dense(len(chars), activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
 #training the model
-model.fit(X, y, epochs=1, batch_size=128)
+model.fit(X, y, epochs=100, batch_size=128)
 
 #generating names
 generated_names = []
